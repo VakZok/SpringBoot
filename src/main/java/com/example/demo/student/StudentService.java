@@ -5,13 +5,15 @@ import java.time.Month;
 import java.util.List;
 
 public class StudentService {
-    return List.of(
-            new Student(
+    public List<Student> getStudent() {
+        return List.of(
+                new Student(
                         1L,
-                                "Maja",
-                                "maja.dieckmann@gmx.de",
+                        "Maja",
+                        "maja.dieckmann@gmx.de",
                         LocalDate.of(1999, Month.OCTOBER, 27),
                         21
-                                )
-                                );
+                )
+        );
+    }
 }
